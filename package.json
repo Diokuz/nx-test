@@ -1,0 +1,15 @@
+{
+  "name": "nx-test",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "task-workspace": "cp packages/foo/src/index.ts dist/workspace-task.ts && cp packages/foo/src/__stories__/stories.ts dist/workspace-task-stories.ts"
+  },
+  "devDependencies": {
+    "nx": "19.1.2"
+  },
+  "nx": {}
+}

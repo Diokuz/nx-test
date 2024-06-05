@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "master",
+  "targetDefaults": {
+    "task-workspace": {
+      "inputs": [
+        "{workspaceRoot}/packages/**/*.ts",
+        "{workspaceRoot}/packages/**/[!_]*/*.ts",
+        "!{workspaceRoot}/**/__stories__/*.ts"
+      ],
+      "outputs": [
+        "{workspaceRoot}/dist/**/*"
+      ],
+      "cache": true
+    }
+  }
+}
